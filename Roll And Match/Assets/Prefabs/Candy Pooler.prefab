@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2832682630039346052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2832682630039346055}
+  - component: {fileID: 2832682630039346054}
+  m_Layer: 0
+  m_Name: Candy Pooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2832682630039346055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832682630039346052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2832682630039346054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2832682630039346052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feae8b3f328ef7f409a98212004a5a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoolList:
+  - Tag: Banana
+    Prefab: {fileID: 5192608477928315903, guid: e7b25a39b26d5db4ab4546985cb1ee45, type: 3}
+    Size: 5
+    Parent: {fileID: 0}
+  - Tag: Grapes
+    Prefab: {fileID: 5654086022753148282, guid: b80548dd3a1404d499a69ab8cb2763ea, type: 3}
+    Size: 5
+    Parent: {fileID: 0}
+  - Tag: Watermelon
+    Prefab: {fileID: 671678464937683561, guid: c2b686c9e19fc0e4785f437e1ab64228, type: 3}
+    Size: 5
+    Parent: {fileID: 0}
+  - Tag: Cherry
+    Prefab: {fileID: 7587284216568533732, guid: 50c85e960818a2c4eb4f629100552265, type: 3}
+    Size: 5
+    Parent: {fileID: 0}
+  - Tag: Apple
+    Prefab: {fileID: 5389753176205087830, guid: 4bf3364721cb50847ab0adba569014b6, type: 3}
+    Size: 5
+    Parent: {fileID: 0}
+  - Tag: Triangle
+    Prefab: {fileID: 8224986655388853649, guid: ee2716b367cdc9a47b4224e5ce809fd5, type: 3}
+    Size: 3
+    Parent: {fileID: 0}
+  - Tag: Square
+    Prefab: {fileID: 3022217778561369002, guid: 2b000f7220747894fb2aaec71bb2c20e, type: 3}
+    Size: 3
+    Parent: {fileID: 0}
+  - Tag: Pentagon
+    Prefab: {fileID: 2626004515258669111, guid: a999be3ba0b927f459d833220fc552ed, type: 3}
+    Size: 3
+    Parent: {fileID: 0}
+  - Tag: Hexagon
+    Prefab: {fileID: 7732638985216850408, guid: 5007940e62310634d96aa37ebb76056e, type: 3}
+    Size: 3
+    Parent: {fileID: 0}
+  - Tag: Scatter
+    Prefab: {fileID: 2830354313287135564, guid: 6f73bfae3a01e9749916b9fcd6304069, type: 3}
+    Size: 3
+    Parent: {fileID: 0}
+  - Tag: Jackpot
+    Prefab: {fileID: 3838139127697779053, guid: 088e5cdbe6cb5a44d85ff279517f2608, type: 3}
+    Size: 1
+    Parent: {fileID: 0}
