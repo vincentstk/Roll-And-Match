@@ -204,7 +204,7 @@ public class BoardSystem
         {
             GameController.Instance.UpdateGold(CandyType.Jackpot, Jackpot.Count);
             OnCandyMatch?.Invoke(CandyType.Jackpot, Jackpot);
-            foreach (Candy item in Scatter)
+            foreach (Candy item in Jackpot)
             {
                 int x, y;
                 CandyGrid.GetXY(item.transform.position, out x, out y);

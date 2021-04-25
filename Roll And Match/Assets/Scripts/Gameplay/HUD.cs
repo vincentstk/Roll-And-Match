@@ -14,6 +14,10 @@ public class HUD : BaseSingleton<HUD>
     public TextMeshProUGUI txtGold;
     [FoldoutGroup("Text")]
     public TextMeshProUGUI txtRollCount;
+    [FoldoutGroup("Text")]
+    public TextMeshProUGUI txtFreeGameCount;
+    [FoldoutGroup("Text")]
+    public TextMeshProUGUI txtJackpotCount;
     #endregion
     public Canvas GameplayUI;
 
@@ -29,6 +33,14 @@ public class HUD : BaseSingleton<HUD>
     public void UpdateGold(float gold)
     {
         txtGold.SetText(gold.ToString());
+    }
+    public void ScatterUpdate(int count)
+    {
+        txtFreeGameCount.SetText("Free " + count);
+    }
+    public void JackpotUpdate(int count)
+    {
+        txtJackpotCount.SetText("Jackpot " + count);
     }
     public void OnClickRoll()
     {

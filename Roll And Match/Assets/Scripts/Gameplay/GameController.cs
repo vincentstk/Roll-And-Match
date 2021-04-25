@@ -13,6 +13,9 @@ public class GameController : BaseSingleton<GameController>
     private GoldComponent goldComp;
     #endregion
 
+    private int ScatterCount = 0;
+    private int JackpotCount = 0;
+
     public float GetGold
     {
         get => goldComp.Gold;
@@ -219,9 +222,13 @@ public class GameController : BaseSingleton<GameController>
                     AddGold = goldComp.GoldToRoll * goldComp.HexagonODD[4];
                 break;
             case CandyType.Scatter:
+                ScatterCount++;
+                HUD.Instance.ScatterUpdate(ScatterCount);
                 break;
             case CandyType.Jackpot:
+                JackpotCount++;
                 AddGold = 10000;
+                HUD.Instance.JackpotUpdate(JackpotCount);
                 break;
         }
         goldComp.Gold += AddGold;

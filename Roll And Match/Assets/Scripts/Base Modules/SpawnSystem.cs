@@ -76,15 +76,17 @@ public class SpawnSystem
         for (int i = 0; i < Count; i++)
         {
             float result = Random.Range(0f, 1f) * 100;
-            float Chance = 0;
             for (int j = 0; j < spawnComp.Candies.Length; j++)
             {
-                Chance += spawnComp.Candies[j].GetRatio;
-                if (result <= Chance)
+                if (result <= spawnComp.Candies[j].GetRatio)
                 {
                     Candy candy = Spawn(spawnComp.Candies[j].GetCandyType);
                     candies.Enqueue(candy);
                     break;
+                }
+                else
+                {
+                    result -= spawnComp.Candies[j].GetRatio;
                 }
             }
         }
